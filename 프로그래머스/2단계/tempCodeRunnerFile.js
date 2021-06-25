@@ -1,0 +1,2 @@
+
+      string += '#'.repeat(n);

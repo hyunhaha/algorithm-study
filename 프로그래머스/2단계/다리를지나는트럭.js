@@ -7,6 +7,7 @@ function solution(bridge_length, weight, truck_weights) {
   bridge.push(now);
   bridge.shift();
   answer++;
+
   while (count) {
     count -= bridge.shift();
     now = truck_weights.shift();

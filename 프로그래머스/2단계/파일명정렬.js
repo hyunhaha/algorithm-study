@@ -66,8 +66,6 @@ function solution(files) {
 ////////////////////////////////
 function solution(files) {
   let fileWrap = files.map((file, index) => ({ file, index }));
-  console.log('fileWrap', fileWrap)
-  var regexNum = /[0-9]/g;
 
   const compare = (a, b) => {
     const reg = /(\D*)([0-9]*)/i;
@@ -75,7 +73,6 @@ function solution(files) {
     const B = b.match(reg);
     const compareHead = A[1].toLowerCase().localeCompare(B[1].toLowerCase());
     const compareNumber = (a, b) => {
-
       if (parseInt(a) > parseInt(b)) return 1;
       else if (parseInt(b) > parseInt(a)) return -1;
       else return 0

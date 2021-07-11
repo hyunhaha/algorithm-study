@@ -1,2 +1,3 @@
-
-      string += '#'.repeat(n);
+else {
+    count += 1
+  }

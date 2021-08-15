@@ -6,13 +6,13 @@ function solution(a, edges) {
     tree[f].push(s)
     tree[s].push(f)
   })
-  let result = BigInt(0);
+  let result = (0);
   let visited = new Array(a.length).fill(false);
   let stack = [[0, null]];
   while (stack.length) {
     let [cur, parent] = stack.pop();
     if (visited[cur]) {
-      result += BigInt(Math.abs(nums[cur]));
+      result += (Math.abs(nums[cur]));
       nums[parent] += nums[cur];
       nums[cur] = 0;
       continue

@@ -49,6 +49,11 @@ const solution = (input) => {
 const input = require('fs').readFileSync('/dev/stdin').toString().trim().split('\n');
 console.log(solution(input));
 
+//3시부터 11시까지 8시간을 고민해서 풀었다,,
+//array에 array를 쓰면 메모리 초과 뜬다.
+//재귀함수쓰면 스택사이즈 초과 뜬다.
+//돌아가는 시간이 많이 걸리긴한다. 하지만 너무 지쳤어..
+
 
 //실패작
 // const solution = (input) => {
